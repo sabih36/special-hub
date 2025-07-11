@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Special Hub</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar History -->
+    <aside class="sidebar">
+      <h2>History</h2>
+      <ul id="history-list"></ul>
+    </aside>
+
+    <!-- Main Chat Area -->
+    <main class="chat-area">
+      <header class="main-header">
+        <h1>Special Hub share thing with your friends</h1>
+      </header>
+
+      <section class="form">
+        <select id="type">
+          <option value="text">Text</option>
+          <option value="image">Image URL</option>
+          <option value="video">Video URL</option>
+          <option value="link">Link</option>
+        </select>
+        <input id="content" type="text" placeholder="Your message or URL..." />
+        <button onclick="addMessage()">Send</button>
+      </section>
+
+      <section id="chat-feed" class="chat-feed"></section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
